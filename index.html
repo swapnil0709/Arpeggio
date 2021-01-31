@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Master Guitar Playing</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Guitar</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="guitar.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Never Stop Practicing</h2>
+        <h3>Where words fail music speaks</h3>
+        <p>
+          Everybody finds learning guitar hard at first. Nothing worth having in
+          life is meant to come easy. So get on it. Get stuck in. You can do it.
+          Follow your heart and keep playing. As the man just said, everything
+          will be alright as long as you keep playing. It sure is great to be a
+          guitar player!
+        </p>
+        <a class="explore" href="#">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Chords</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Tabs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+      const explore = document.querySelector(".explore");
+      explore.addEventListener("click", () => {
+        explore.classList.toggle("change");
+      });
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
